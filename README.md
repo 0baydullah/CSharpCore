@@ -5,5 +5,6 @@
 ### 2 - DateTime + TimeSpan
 ### 3 - String + StringBuilder
 ### 4 - Dictionary
+### 5 - HashSet + SortedSet
 		
 

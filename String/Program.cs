@@ -71,7 +71,6 @@ void StringBasics()
     string str3 = str2.ToLower();
     Console.WriteLine(str3+ "\n"+ str3.ToUpper());
 
-
     Console.WriteLine("\n****END****\n");
 }
 
