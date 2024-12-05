@@ -11,6 +11,7 @@ Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("Enter command to execute function...!! Enter 0 to RESET & -1 to EXIT : ");
 Console.WriteLine("    1 - String Basics");
 Console.WriteLine("    2 - Missing Numbers");
+Console.WriteLine("    3 - Space Remover");
 
 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -26,6 +27,9 @@ switch (input)
     case 2:
         MissingNumbers();
         goto case 0;
+    case 3:
+        SpaceRemover();
+        goto case 0;
     default:
         Console.WriteLine("Not a VALID Command...Try Again!");
         goto case 0;
@@ -33,16 +37,14 @@ switch (input)
 
 void StringBasics()
 {
-    string str1 = "Hello";
-    string str2 = str1;
-    // str1 += str2;
-     
-    str2 = "hello";
+    string str1 = "                 HeLLo       ";
+    string str2;
 
-    str1 += str2;
+    str2 = str1.Trim() ;
 
-    var val = str1.Contains(str2,StringComparison.InvariantCultureIgnoreCase);
-    System.Console.WriteLine(val);
+    string str3 = str2.ToLower();
+    Console.WriteLine(str3+ "\n"+ str3.ToUpper());
+
 
     Console.WriteLine("\n****END****\n");
 }
@@ -78,4 +80,18 @@ void MissingNumbers()
 
     Console.WriteLine(output);
     Console.WriteLine("\n****END****\n");
+}
+
+void SpaceRemover()
+{
+    string message = "Enter a Text with extra spaces among words : ";
+    Console.WriteLine(message);
+    String text = Console.ReadLine();
+
+    var words = text.Split(' ',StringSplitOptions.RemoveEmptyEntries);
+
+    string result = string.Join(' ', words);
+    Console.WriteLine(result);
+
+    Console.WriteLine("\n====END====\n");
 }
