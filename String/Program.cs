@@ -1,4 +1,6 @@
-﻿Home:
+﻿using System.Text;
+
+Home:
 
 Console.BackgroundColor = ConsoleColor.White;
 Console.ForegroundColor = ConsoleColor.Green;
@@ -12,6 +14,7 @@ Console.WriteLine("Enter command to execute function...!! Enter 0 to RESET & -1 
 Console.WriteLine("    1 - String Basics");
 Console.WriteLine("    2 - Missing Numbers");
 Console.WriteLine("    3 - Space Remover");
+Console.WriteLine("    4 - String Builder Basic");
 
 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -30,9 +33,32 @@ switch (input)
     case 3:
         SpaceRemover();
         goto case 0;
+    case 4:
+        StringBuilderBasic();
+        goto case 0;
     default:
         Console.WriteLine("Not a VALID Command...Try Again!");
         goto case 0;
+}
+
+void StringBuilderBasic()
+{
+    StringBuilder message = new StringBuilder();
+    message.Append("Enter a string : ");
+    Console.WriteLine(message);
+    string input = Console.ReadLine();
+    message.Clear();
+    message.Append(input);
+
+    var showOutput = message.Append($"your input is {input}");
+    showOutput.Remove(0,input.Length);
+    Console.WriteLine(showOutput);
+    showOutput.Remove(0, showOutput.Length - input.Length);
+    Console.WriteLine(showOutput);
+    showOutput.Replace(showOutput.ToString(), "String is Immutable");
+    Console.WriteLine(showOutput.ToString());
+
+    Console.WriteLine("\n****END****\n");
 }
 
 void StringBasics()
