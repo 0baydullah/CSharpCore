@@ -13,6 +13,7 @@ Console.BackgroundColor = ConsoleColor.Black;
 Console.WriteLine("Enter command to execute function...!! Enter 0 to RESET & -1 to EXIT : ");
 Console.WriteLine("    1 - Frequency Count");
 Console.WriteLine("    2 - Word Counter");
+Console.WriteLine("    3 - Most Frequent Character(s)");
 
 int input = Convert.ToInt32(Console.ReadLine());
 
@@ -28,12 +29,34 @@ switch (input)
     case 2:
         WordCounter();
         goto case 0;
-    //case 3:
-    //    SpaceRemover();
-    //    goto case 0;
+    case 3:
+        MostFrequentCharacters();
+        goto case 0;
     default:
         Console.WriteLine("Not a VALID Command...Try Again!");
         goto case 0;
+}
+
+void MostFrequentCharacters()
+{
+    Console.WriteLine("Enter your text to see most frequent character(s) : ");
+    string text = Console.ReadLine().ToLower();
+    var characters = new Dictionary<char, int>();
+    foreach(char c in text)
+    {
+        if (char.IsLetter(c))
+        {
+            if (characters.ContainsKey(c))
+                characters[c]++;
+            else characters[c] = 1;
+        }
+    }
+    int maxFrequency = characters.Values.Max();
+
+    var mostFrequentChar = characters.Where(x => x.Value == maxFrequency).Select(x=>x.Key);
+    Console.WriteLine($"\nMost Frequent Character(s) : {string.Join(", ", mostFrequentChar)} and Max Frequency is {maxFrequency}");
+
+    Console.WriteLine("\n___END___\n");
 }
 
 void WordCounter()
