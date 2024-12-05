@@ -2,11 +2,8 @@
 
 Console.BackgroundColor = ConsoleColor.White;
 Console.ForegroundColor = ConsoleColor.Green;
-
 Console.WriteLine("C# DateTime\n");
-
 Console.BackgroundColor = ConsoleColor.Black;
-
 
 Console.WriteLine("Enter command to execute function...!! Enter 0 to RESET & -1 to EXIT : ");
 Console.WriteLine("    1 - Date Time Details");
@@ -18,18 +15,14 @@ switch (input)
 {
     case -1:
         return;
-
     case 0:
         goto Home;
-
     case 1:
         DateTimeDetails();
         goto case 0;
-
     case 2:
         DateTimeOperations();
         goto case 0;
-
     default:
         Console.WriteLine("Not a VALID Command...Try Again!");
         goto case 0;
@@ -38,7 +31,7 @@ switch (input)
 void DateTimeOperations()
 {
     var todaysDate = DateTime.Now;
-    var date1 = new DateTime(1969,10,19,15,36,23);
+    var randomDate = new DateTime(1969,10,19,15,36,23);
 
     TimeSpan span = new TimeSpan(1, 0, 0);
 
@@ -47,20 +40,13 @@ void DateTimeOperations()
     Console.WriteLine("Date and Day befor 20 days : " + todaysDate.AddDays(-20).ToString("dd:MM:yyyy - dddd"));
     Console.WriteLine("Date and Day after 10 days : " + todaysDate.AddDays(10).ToString("dd:MM:yyyy - dddd"));
     Console.WriteLine("Date and Day befor 20 days : " + todaysDate.AddDays(-20).ToString("dd:MM:yyyy - dddd"));
-    Console.WriteLine("A specific Date : " + date1.ToString("dd:MM:yyyy - dddd"));
-    Console.WriteLine("Different between this and todays date : " + (todaysDate-date1).Days);
-    Console.WriteLine("Different Hours : " + (todaysDate-date1).Hours);
-    Console.WriteLine("Different Total Hours : " + (todaysDate-date1).TotalHours);
-
+    Console.WriteLine("A specific Date : " + randomDate.ToString("dd:MM:yyyy - dddd"));
+    Console.WriteLine("Different between this and todays date : " + (todaysDate-randomDate).Days);
+    Console.WriteLine("Different Hours : " + (todaysDate-randomDate).Hours);
+    Console.WriteLine("Different Total Hours : " + (todaysDate-randomDate).TotalHours);
     Console.WriteLine("Date and Day after 1 days : " + todaysDate.Add(span));
     Console.WriteLine("Date and Day before 1 days : " + (todaysDate).Subtract(span));
-
-
-    Console.WriteLine("Compare between 2 days : " + (todaysDate).CompareTo(date1));
-
-
-
-
+    Console.WriteLine("Compare between 2 days : " + (todaysDate).CompareTo(randomDate));
     Console.WriteLine("\n****END****\n");
 }
 
@@ -69,7 +55,6 @@ static void DateTimeDetails()
     Console.WriteLine("Showing Date Times Details");
     DateTime currentDateTime = DateTime.Now;
     DateTime currentUtcDateTime = DateTime.UtcNow;
-
 
     Console.WriteLine("Date Time : " + currentDateTime);
     Console.WriteLine("UTC Date Time : " + currentUtcDateTime);
@@ -89,7 +74,5 @@ static void DateTimeDetails()
     Console.WriteLine("Is Leap Year : " + DateTime.IsLeapYear(currentDateTime.Year)) ;
     Console.WriteLine("Time Kind : " + (currentUtcDateTime.Kind)) ;
     Console.WriteLine("Unix Epoch : " + DateTime.UnixEpoch.ToString("dd-MMMM-yyyy hh:mm:ss tt" )) ;
-
-
     Console.WriteLine("\n****END****\n");
 }
