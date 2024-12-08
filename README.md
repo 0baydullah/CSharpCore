@@ -7,5 +7,7 @@
 ### 4 - Dictionary
 ### 5 - HashSet + SortedSet
 ### 6 - Stack
+### 7 - Queue
+### 8 - LinkedList
 		
 
