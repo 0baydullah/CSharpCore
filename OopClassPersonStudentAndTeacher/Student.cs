@@ -15,7 +15,7 @@ namespace OopClassPersonStudentAndTeacher
 
         public void ShowAge()
         {
-            Console.WriteLine($"My age is : {Age} years old");
+            Console.WriteLine($"I'm {Age} years old");
         }
     }
 }

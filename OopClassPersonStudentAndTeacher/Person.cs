@@ -12,7 +12,7 @@ namespace OopClassPersonStudentAndTeacher
 
         public void Greet()
         {
-            Console.WriteLine("Hello....GP...");
+            Console.WriteLine("Hello....");
         }
 
         public void SetAge(int age)
