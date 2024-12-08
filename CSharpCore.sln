@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopFirstClassAndMethodToStr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopConstructorsAndDestructors", "ConstructorsAndDestructors\OopConstructorsAndDestructors.csproj", "{4D15E014-3145-4A5D-B47B-333F8428198D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopClassPersonStudentAndTeacher", "OopClassPersonStudentAndTeacher\OopClassPersonStudentAndTeacher.csproj", "{D1DCBD13-AABF-4268-8B71-937FA2537433}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +71,10 @@ Global
 		{4D15E014-3145-4A5D-B47B-333F8428198D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4D15E014-3145-4A5D-B47B-333F8428198D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4D15E014-3145-4A5D-B47B-333F8428198D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1DCBD13-AABF-4268-8B71-937FA2537433}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1DCBD13-AABF-4268-8B71-937FA2537433}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1DCBD13-AABF-4268-8B71-937FA2537433}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1DCBD13-AABF-4268-8B71-937FA2537433}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
