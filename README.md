@@ -6,5 +6,6 @@
 ### 3 - String + StringBuilder
 ### 4 - Dictionary
 ### 5 - HashSet + SortedSet
+### 6 - Stack
 		
 
