@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopClassPersonStudentAndTea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopPhotoBookClass", "OopPhotoBookClass\OopPhotoBookClass.csproj", "{480C7B41-4AD1-4F88-AE30-05AE47A890DD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopSealedTest", "OopSealedTest\OopSealedTest.csproj", "{C0399053-B3FB-49FF-8366-98960B8A506E}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{480C7B41-4AD1-4F88-AE30-05AE47A890DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{480C7B41-4AD1-4F88-AE30-05AE47A890DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{480C7B41-4AD1-4F88-AE30-05AE47A890DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0399053-B3FB-49FF-8366-98960B8A506E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0399053-B3FB-49FF-8366-98960B8A506E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0399053-B3FB-49FF-8366-98960B8A506E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0399053-B3FB-49FF-8366-98960B8A506E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
