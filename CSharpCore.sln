@@ -29,6 +29,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopPhotoBookClass", "OopPho
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OopSealedTest", "OopSealedTest\OopSealedTest.csproj", "{C0399053-B3FB-49FF-8366-98960B8A506E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Generics", "Generics\Generics.csproj", "{555FF666-344E-411A-B5C3-FE803E2D7952}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +89,10 @@ Global
 		{C0399053-B3FB-49FF-8366-98960B8A506E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0399053-B3FB-49FF-8366-98960B8A506E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0399053-B3FB-49FF-8366-98960B8A506E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{555FF666-344E-411A-B5C3-FE803E2D7952}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{555FF666-344E-411A-B5C3-FE803E2D7952}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{555FF666-344E-411A-B5C3-FE803E2D7952}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{555FF666-344E-411A-B5C3-FE803E2D7952}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
