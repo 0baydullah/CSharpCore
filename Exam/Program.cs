@@ -72,7 +72,7 @@ public class Program
 
         //       ----------      Question 5      ----------
 
-        var nums1 = new int[] { 8, 4, 5, 6, 1, 7, 2, 3, 8, 1, 9 };
+        var nums1 = new int[] { 8, 4, 5, 6, 1, 7, 2, 3, 8, 1 };
         var nums2 = new int[] { 3, 8, 1, 9, 2, 3, 8, 4, 5, 6, 7 };
 
         var sortedArray = nums1.Concat(nums2).ToArray();
