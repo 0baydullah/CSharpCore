@@ -26,7 +26,7 @@ public class Dog : Animal
 public class BabyDog : Dog
 {
     public override void eat() { Console.WriteLine("eating biscuits..."); }
-    public override void run() { Console.WriteLine("running slowly..."); } // compile time error 
+  //  public override void run() { Console.WriteLine("running slowly..."); } // compile time error 
 }
 public class TestSealed
 {
